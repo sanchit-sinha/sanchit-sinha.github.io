@@ -221,16 +221,16 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 @keyframes background{
-    20%{
+    25%{
             background-image: url("../img/background6.png");
     }
-    40%{
+    50%{
             background-image: url("../img/background7.jpeg");
     }
-    60%{
+    75%{
             background-image: url("../img/background8.jpeg");
     }
-    80%{
+    100%{
             background-image: url("../img/background9.jpeg");
     }
 }

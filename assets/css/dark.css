@@ -38,16 +38,16 @@
     animation-timing-function:linear;
     }
     @keyframes black-background{
-        20%{
+        25%{
                 background-image: url("../img/black-background1.jpeg");
         }
-        40%{
+        50%{
                 background-image: url("../img/black-background2.jpg");
         }
-        60%{
+        75%{
                 background-image: url("../img/black-background3.jpg");
         }
-        80%{
+        100%{
                 background-image: url("../img/black-background4.jpg");
         }
     }
