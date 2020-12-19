@@ -1,11 +1,14 @@
+#btn{
+    padding-top: 30px;
+}
 #mode { 
-    margin-right: 25%;
-    text-align: right;
-    float:right; 
+    margin-left: 30px;
+    /* text-align: center; */
     background-color: white;
     font-weight: bold;
 }
 #abovemode{
+    text-align: center;
     color: white;
     font-weight: bold;
     font-size: large;
@@ -16,7 +19,6 @@
     width: 20px; 
     text-align: center; 
     padding: 5px; 
-    margin-left: 8px; 
 } 
 .dark{ 
     background-color: #222; 
