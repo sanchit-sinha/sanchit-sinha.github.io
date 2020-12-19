@@ -1,0 +1,113 @@
+#mode { 
+    margin-right: 25%;
+    text-align: right;
+    float:right; 
+    background-color: white;
+    font-weight: bold;
+}
+#abovemode{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+.change { 
+    cursor: pointer; 
+    /* border-radius: 40%;  */
+    width: 20px; 
+    text-align: center; 
+    padding: 5px; 
+    margin-left: 8px; 
+} 
+.dark{ 
+    background-color: #222; 
+    color: #e6e6e6; 
+} 
+
+#dark-hero{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/black-background5.jpg") top center;
+    background-size: cover;
+  
+    animation-name: black-background;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s; 
+    animation-timing-function:linear;
+    }
+    @keyframes black-background{
+        20%{
+                background-image: url("../img/black-background1.jpeg");
+        }
+        40%{
+                background-image: url("../img/black-background2.jpg");
+        }
+        60%{
+                background-image: url("../img/black-background3.jpg");
+        }
+        80%{
+                background-image: url("../img/black-background4.jpg");
+        }
+    }
+
+    #dark-hero:before {
+        content: "";
+        background: rgba(5, 13, 24, 0.3);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+      }
+      
+      #dark-hero .hero-container {
+        position: relative;
+        z-index: 2;
+        min-width: 300px;
+      }
+      
+      #dark-hero h1 {
+        margin: 0 0 10px 0;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 56px;
+        color: #fff;
+      }
+      
+      #dark-hero p {
+        color: #fff;
+        margin-bottom: 50px;
+        font-size: 26px;
+        font-family: "Poppins", sans-serif;
+      }
+      
+      #dark-hero p span {
+        color: #fff;
+        padding-bottom: 4px;
+        letter-spacing: 1px;
+        border-bottom: 3px solid #149ddd;
+      }
+      
+      @media (min-width: 1024px) {
+        #dark-hero {
+          background-attachment: fixed;
+        }
+      }
+      
+      @media (max-width: 768px) {
+        #dark-hero h1 {
+          font-size: 28px;
+          line-height: 36px;
+        }
+        #dark-hero h2 {
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 30px;
+        }
+      }
+
+/* 
+      #dark-testimonials{
+        background: #979797;
+      } */
