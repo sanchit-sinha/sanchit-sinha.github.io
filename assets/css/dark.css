@@ -20,8 +20,8 @@
     cursor: pointer; 
     /* border-radius: 40%;  */
     width: 20px; 
-    text-align: center; 
-    padding: 5px; 
+    text-align: right; 
+    /* padding: 5px;  */
 } 
 .dark{ 
     /* background-color: #222;  */
