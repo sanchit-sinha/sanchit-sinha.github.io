@@ -6,7 +6,7 @@ function display_on_submit(){
 
     // alert(senders_email);
     var pattern =  /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
-    if((senders_name.replace(/\s/g, '').length) && (senders_subject.replace(/\s/g, '').length) && (senders_message.replace(/\s/g, '').length) && (senders_email == pattern)){
+    if((senders_name.replace(/\s/g, '').length) && (senders_subject.replace(/\s/g, '').length) && (senders_message.replace(/\s/g, '').length) && (senders_email.replace(/\s/g, '').length)){
         document.getElementById("submit_button_error_message").style.display = "none";
         document.getElementById("submit_button_sent_message").style.display = "block";
         return(true);
