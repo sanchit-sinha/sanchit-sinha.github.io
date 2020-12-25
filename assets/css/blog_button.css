@@ -5,6 +5,20 @@
     left: 10%; 
   }  */
 
+  .buttoncontainer{
+    position: relative;
+  top: 35%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  }
   .buttoncontainer span { 
     color: #262626; 
     background: rgb(21, 255, 255); 
