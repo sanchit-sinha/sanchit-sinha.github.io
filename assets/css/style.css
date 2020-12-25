@@ -1058,7 +1058,7 @@ section {
 
 
 
-.buttoncontainer {
+.buttoncontainer2 {
   position: relative;
 
   width: 100%;
@@ -1066,10 +1066,10 @@ section {
 }
 
 
-.buttoncontainer  {
+.buttoncontainer2  {
   position: relative;
-  top: 15%;
-  left: 30%;
+  top: 35%;
+  left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   color: black;
@@ -1083,10 +1083,10 @@ section {
 .btn{
    position: relative;
   top : 10%;
-  left: 25%;
+  left: 60%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #f1f1f1;
+  background-color: rgb(0, 247, 255);
   color: black;
   font-size: 16px;
   padding: 16px 30px;
@@ -1098,7 +1098,7 @@ section {
 }
 
 
-.buttoncontainer .btn:hover {
-  background-color: rgb(0, 247, 255);
+.buttoncontainer2 .btn:hover {
+  background-color: yellow;
   color: black;
 }
