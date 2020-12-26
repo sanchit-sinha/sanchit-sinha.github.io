@@ -1079,7 +1079,7 @@ section {
   cursor: pointer;
   border-radius: 5px;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 7%;
   margin-bottom: -8%;
 
 
@@ -1097,7 +1097,7 @@ section {
   background-color: rgb(0, 247, 255);
   color: black;
   font-size: 16px;
-  padding: 16px 30px;
+  padding: 10px 30px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
@@ -1107,12 +1107,18 @@ section {
 
 
 .buttoncontainer2 .btn:hover {
-  background-color: yellow;
+  background-color: rgb(146, 3, 241);
   color: black;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 731px) {
   .buttoncontainer2{
-    margin-top: 12%;
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .buttoncontainer2{
+    margin-top: 0%;
+    display: none;
   }
 }

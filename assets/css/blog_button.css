@@ -35,6 +35,8 @@
   @keyframes animate { 
     0% { 
       transform: translateY(0px); 
+      background: rgb(146, 3, 241); 
+
     } 
 
     50% { 
@@ -43,6 +45,7 @@
 
     100% { 
       transform: translateY(0px); 
+
     } 
   } 
 
