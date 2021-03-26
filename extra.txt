@@ -1,0 +1,96 @@
+<!-- <ul>
+                      <li><b>PHY102A</b> : Classical mechanics and Relativity</li>
+                      <br>
+                      <li><b>MTH101A</b> : Real analysis and Calculus</li>
+                      <br>
+                      <li><b>LIF101A</b> : Real analysis and Calculus</li>
+                      <br>
+                      <li><b>PHY101A</b> : Physics Laboratory</li>
+                      <br>
+                      <li><b>PHI140A</b> : Introduction to Indian Philosophy</li>
+                      <br>
+                      <li><b>TA101A</b> :  Engineering Drawing</li>
+                      <br>
+                      <li><b>PE101</b> : Morning Exercise</li>
+                      <br>
+                    </ul> -->
+                   <!-- <ul style="font-size: large;">
+                       <li style=" font-weight : bold;">PHY102A : Classical mechanics and Relativity
+                      </li>
+                      <p>
+                        <b>Credits</b> : 11<br>
+                        <b>Instructors</b> : Prof. Aditya H Kelkar, Prof. K P Rajeev
+                      </p> 
+                      <br>
+
+                      <li style=" font-weight : bold;">MTH101A : Real analysis and Calculus </li>
+                      <p>
+                        <b>Credits</b> : 11<br>
+                        <b>Instructors</b> : Prof. Amit S Kuber, Prof. Sameer Chavan
+                      </p> <br>
+                      
+                      <li style=" font-weight : bold;">MTH101A : Real analysis and Calculus </li>
+                      <p>
+                        <b>Credits</b> : 11<br>
+                        <b>Instructors</b> : Prof. Amit S Kuber, Prof. Sameer Chavan
+                      </p> 
+                      <br>
+
+                      <li style=" font-weight : bold;">LIF101A : Biological sciencess </li>
+                      <p>
+                        <b>Credits</b> : 6<br>
+                        <b>Instructors</b> : Prof. Arun K Shukla, Prof. Pradip Sinha
+                      </p> 
+                      <br>
+
+                      <li style=" font-weight : bold;">PHI140A : Introduction to Indian Philosophy </li>
+                      <p>
+                        <b>Credits</b> : 11<br>
+                        <b>Instructors</b> : Prof. Prashant Bagad
+                      </p> 
+                      <br>
+
+                      <li style=" font-weight : bold;">TA101A : Engineering Drawing </li>
+                      <p>
+                        <b>Credits</b> : 9<br>
+                        <b>Instructors</b> : Prof. Syam Nair
+                      </p> 
+                      <br>
+                      <li style=" font-weight : bold;">PHY 101A : Physics Laboratory </li>
+                      <p>
+                        <b>Credits</b> : 3<br>
+                        <b>Instructors</b> :Prof. Asima Pradhan
+                      </p> 
+                      <br>
+                      <li style=" font-weight : bold;">PE101 : Morning Exercise </li>
+                      <p>
+                        <b>Credits</b> : 0<br>
+                      </p> 
+                      <br> 
+
+                      
+                    </ul>-->
+
+
+
+                    <h4 class="text-black">First Semester</h4>
+                  <div class="course-item pb-0">
+                    <ul class="list-group">
+                      <li class="list-group-item"><b>PHY102A</b> : Classical mechanics and Relativity</li>
+                      <li class="list-group-item"><b>MTH101A</b> : Real analysis and Calculus</li>
+                      <li class="list-group-item"><b>LIF101A</b> : Real analysis and Calculus</li>
+                      <li class="list-group-item"><b>PHY101A</b> : Physics Laboratory</li>
+                      <li class="list-group-item"><b>PHI140A</b> : Introduction to Indian Philosophy</li>
+                      <li class="list-group-item"><b>TA101A</b> : Engineering Drawing</li>
+                      <li class="list-group-item"><b>PE101</b> : Morning Exercise</li>
+                    </ul>
+
+                    <ul class="list-group">
+                          <li class="list-group-item"><b>PHY103A</b> : Electrodynamics</li>
+                          <li class="list-group-item"><b>MTH102A</b> : Linear Algebra and Ordinary Differential
+                            Equations</li>
+                          <li class="list-group-item"><b>ESC101A</b> : Introduction to Programming in C</li>
+                          <li class="list-group-item"><b>CHM101A</b> : Chemistry Laboratory</li>
+                          <li class="list-group-item"><b>CHM102A</b> : General Chemistry</li>
+                          <li class="list-group-item"><b>PE102A</b> : Evening Exercise</li>
+                        </ul>
