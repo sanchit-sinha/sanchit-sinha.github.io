@@ -16,7 +16,7 @@
       <pubDate>Mon, 26 Jul 2021 21:16:42 +0530</pubDate>
       
       <guid>https://sanchit-sinha.github.io/logBook/posts/basics-of-c&#43;&#43;/</guid>
-      <description>The Theory of C++ Basics of C++  Variables:  In programming, a variable is a container (storage area) to hold data. They can-not be keywords.   Literals:  Literals are data used for representing fixed values like integer, character, strings and floating numbers.   Constants:  Their values cannot change. Certain variables defined using consts or #define can also act as constants.    Basic Input/Output  cout  The cout object in C++ is an object of class ostream.</description>
+      <description>Short Notes regardging C++ and OOPs</description>
     </item>
     
   </channel>
