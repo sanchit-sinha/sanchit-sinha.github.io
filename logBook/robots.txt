@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://sanchit-sinha.github.io/logBook/sitemap.xml
