@@ -9,16 +9,61 @@
       <link>https://sanchit-sinha.github.io/logBook/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 26 Jul 2021 21:16:42 +0530</lastBuildDate><atom:link href="https://sanchit-sinha.github.io/logBook/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Aug 2021 00:48:17 +0530</lastBuildDate><atom:link href="https://sanchit-sinha.github.io/logBook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Heaps</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/heaps/</link>
+      <pubDate>Tue, 10 Aug 2021 00:48:17 +0530</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/heaps/</guid>
+      <description>Short notes on Heaps</description>
+    </item>
+    
     <item>
       <title>Basics of C&#43;&#43;</title>
       <link>https://sanchit-sinha.github.io/logBook/posts/basics-of-c&#43;&#43;/</link>
       <pubDate>Mon, 26 Jul 2021 21:16:42 +0530</pubDate>
       
       <guid>https://sanchit-sinha.github.io/logBook/posts/basics-of-c&#43;&#43;/</guid>
-      <description>Short Notes regardging C++ and OOPs</description>
+      <description>Short Notes regarding C++ and OOPs</description>
     </item>
     
+    <item>
+      <title>Web Scrapping</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/web-scrapping/</link>
+      <pubDate>Wed, 30 Dec 2020 02:20:01 +0530</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/web-scrapping/</guid>
+      <description>Short Notes regarding Web Scrapping</description>
+    </item>
+    
+    <item>
+      <title>Basics of bash</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/basics-of-bash/</link>
+      <pubDate>Sun, 20 Dec 2020 02:10:32 +0530</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/basics-of-bash/</guid>
+      <description>Short Notes regarding bash</description>
+    </item>
+    
+    <item>
+      <title>Working with Django</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/working-with-django/</link>
+      <pubDate>Wed, 16 Dec 2020 01:25:53 +0530</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/working-with-django/</guid>
+      <description>Setting up and using Django for the first time</description>
+    </item>
+    
+    
+    <item>
+      <title>Basics of PHP</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/basics-of-php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/basics-of-php/</guid>
+      <description>Short Notes regarding PHP</description>
+    </item>
     
     
   </channel>

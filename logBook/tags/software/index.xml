@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Software on LogBook</title>
+    <link>https://sanchit-sinha.github.io/logBook/tags/software/</link>
+    <description>Recent content in Software on LogBook</description>
+    <image>
+      <url>https://sanchit-sinha.github.io/logBook/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://sanchit-sinha.github.io/logBook/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 16 Dec 2020 01:25:53 +0530</lastBuildDate><atom:link href="https://sanchit-sinha.github.io/logBook/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Working with Django</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/working-with-django/</link>
+      <pubDate>Wed, 16 Dec 2020 01:25:53 +0530</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/working-with-django/</guid>
+      <description>Setting up and using Django for the first time</description>
+    </item>
+    
+  </channel>
+</rss>

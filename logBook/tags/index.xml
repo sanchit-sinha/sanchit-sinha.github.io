@@ -9,7 +9,16 @@
       <link>https://sanchit-sinha.github.io/logBook/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 26 Jul 2021 21:16:42 +0530</lastBuildDate><atom:link href="https://sanchit-sinha.github.io/logBook/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 10 Aug 2021 00:48:17 +0530</lastBuildDate><atom:link href="https://sanchit-sinha.github.io/logBook/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DSA</title>
+      <link>https://sanchit-sinha.github.io/logBook/tags/dsa/</link>
+      <pubDate>Tue, 10 Aug 2021 00:48:17 +0530</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/tags/dsa/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>c&#43;&#43;</title>
       <link>https://sanchit-sinha.github.io/logBook/tags/c&#43;&#43;/</link>
@@ -25,6 +34,51 @@
       <pubDate>Mon, 26 Jul 2021 21:16:42 +0530</pubDate>
       
       <guid>https://sanchit-sinha.github.io/logBook/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Scrapping</title>
+      <link>https://sanchit-sinha.github.io/logBook/tags/web-scrapping/</link>
+      <pubDate>Wed, 30 Dec 2020 02:20:01 +0530</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/tags/web-scrapping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>https://sanchit-sinha.github.io/logBook/tags/bash/</link>
+      <pubDate>Sun, 20 Dec 2020 02:10:32 +0530</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Django</title>
+      <link>https://sanchit-sinha.github.io/logBook/tags/django/</link>
+      <pubDate>Wed, 16 Dec 2020 01:25:53 +0530</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>https://sanchit-sinha.github.io/logBook/tags/software/</link>
+      <pubDate>Wed, 16 Dec 2020 01:25:53 +0530</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PHP</title>
+      <link>https://sanchit-sinha.github.io/logBook/tags/php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/tags/php/</guid>
       <description></description>
     </item>
     

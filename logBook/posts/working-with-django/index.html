@@ -1,0 +1,600 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>Working with Django | LogBook</title>
+<meta name=keywords content="Software,Django">
+<meta name=description content="Setting up and using Django for the first time">
+<meta name=author content="Sanchit Sinha">
+<link rel=canonical href=https://sanchit-sinha.github.io/logBook/posts/working-with-django/>
+<meta name=google-site-verification content="XYZabc">
+<meta name=yandex-verification content="XYZabc">
+<meta name=msvalidate.01 content="XYZabc">
+<link crossorigin=anonymous href=/logBook/assets/css/stylesheet.min.9f1d947375927e9847272b1f4e9be81336f539e513bf04d52cade31f81cad1af.css integrity="sha256-nx2Uc3WSfphHJysfTpvoEzb1OeUTvwTVLK3jH4HK0a8=" rel="preload stylesheet" as=style>
+<link rel=preload href=/apple-touch-icon.png as=image>
+<script defer crossorigin=anonymous src=/logBook/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://sanchit-sinha.github.io/logBook/%3Clink%20/%20abs%20url%3E>
+<link rel=icon type=image/png sizes=16x16 href=https://sanchit-sinha.github.io/logBook/%3Clink%20/%20abs%20url%3E>
+<link rel=icon type=image/png sizes=32x32 href=https://sanchit-sinha.github.io/logBook/%3Clink%20/%20abs%20url%3E>
+<link rel=apple-touch-icon href=https://sanchit-sinha.github.io/logBook/%3Clink%20/%20abs%20url%3E>
+<link rel=mask-icon href=https://sanchit-sinha.github.io/logBook/%3Clink%20/%20abs%20url%3E>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.88.1">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+<style>@media(prefers-color-scheme:dark){:root{--theme:#1d1e20;--entry:#2e2e33;--primary:rgba(255, 255, 255, 0.84);--secondary:rgba(255, 255, 255, 0.56);--tertiary:rgba(255, 255, 255, 0.16);--content:rgba(255, 255, 255, 0.74);--hljs-bg:#2e2e33;--code-bg:#37383e;--border:#333}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
+</noscript><script>MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:['script','noscript','style','textarea','pre']}},window.addEventListener('load',a=>{document.querySelectorAll("mjx-container").forEach(function(a){a.parentElement.classList+='has-jax'})})</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-123-45','auto'),ga('send','pageview'))</script><meta property="og:title" content="Working with Django">
+<meta property="og:description" content="Setting up and using Django for the first time">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sanchit-sinha.github.io/logBook/posts/working-with-django/"><meta property="og:image" content="https://sanchit-sinha.github.io/logBook/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2020-12-16T01:25:53+05:30">
+<meta property="article:modified_time" content="2020-12-16T01:25:53+05:30"><meta property="og:site_name" content="LogBook">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://sanchit-sinha.github.io/logBook/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
+<meta name=twitter:title content="Working with Django">
+<meta name=twitter:description content="Setting up and using Django for the first time">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://sanchit-sinha.github.io/logBook/posts/"},{"@type":"ListItem","position":3,"name":"Working with Django","item":"https://sanchit-sinha.github.io/logBook/posts/working-with-django/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Working with Django","name":"Working with Django","description":"Setting up and using Django for the first time","keywords":["Software","Django"],"articleBody":"-I’ll be using VScode for building up my Django-Project -The integrated terminal really helped me in this\n These django steps would be with respect to the steps I followed in order to learn Django and create my very own blog\n SETTING UP VIRTUAL ENVIRONMENT FOR USING DJANGO  First of all install a virtual environment for using Django. Activate the virtual environment using . env/bin/activate  CREATING FOLDER FOR STORING YOUR DJANGO PROJECT Make a folder that should contain your project.. FOR EG: Folder named \"BLOG\"  STARTING WITH YOUR DJANGO-PROJECT  Reference- Video2 of Django Playlist of The Net Ninja:\n Move to your required folder .. cd Blog Type the following command in the terminal django-admin startproject projectname - This would create a folder named foldername with required materials present in it  FOR EG: django-admin startproject BlogMaterials Move into your folder created using django-admin startproject say “BlogMaterials” using cd foldername RUN-SERVER You can create your own server and view your project-works over there  Run : python manage.py runserver USING URLs and Views File in your Django-Project folder  Reference- Video3 of Django-Playlist of The Net Ninja\n  Create a file named views.py in the folder containing your urls.py file We can add html links to our project in the urls.py and the respective functions to be rendered by clicking them in our views.py file\n  Add urls to your urls.py file Firstly import views by typing : from. import views in your urls.py file\n FOR EG: path('about/',views.about), : The \"about\" link would be created and about function would be requested when clicked over it    Define your required function in the view.py file Firstly import the following files : Type “from django.http import HttpResponse” in view.py file\nFOR EG : def about(request): return HttpResponse(\"about\")  The above function prints “about” on the page when request is sent to the required page\n  Run server and view your project so far Code : python manage.py runserver\n  USING HTMLTemplates in urls.py and views.py file  Reference- Video4 of Django-Playlist of The Net Ninja\n Create a “templates” folder in the main folder that is “BlogMaterials”. Add homepage.html and about.html in this “templates” folder and add html content in it which you want to be displayed over the browser Add path of template folder in settings.py file. Open settings.py and move to the section named TEMPPLATES Under the TEMPLATES section add the relative path of your template folder in “DIRS” part // It will look under temmplate folder of each app Change the respective functions in views.py file FOR EG : Firstly import the following in your views.py files  from django.shortcuts import render def about(request): return render(request,'about.html) Run server to and view the respective changes  Using Django Apps  Reference- Video5 of Django-Playlist of The Net Ninja\n  MAIN FRAMEWORK :  Django project  Djangonautic Apps articles app accounts app\n( BlogMaterials)      Run:  python manage.py startapp articles  This creates articles folder along with required files  Register this articles folder in the settings.py file in the main folder under the INSTALLED_APPS section Create urls.py file in articles folder in the main folder of Django Project You can copy paste your urls.py file in this articles folder as well. Remove the lines containing admin from the urls.py file in this folder as those are not required Create a template folder in this main articles folder and create another aricles folder under this template folder . Store your respective html files in this folder say : article_list.html Add path of urls.py file of abouts folder in the urls.py file of your main folder(“BLogMaterials”) so that the server knows that the urls.py file of articles file could be used EG : Add the following code in path : Firstly import “include” using the following code :  from django.conf.urls import url,include Then under the urlpatterns section write the following code :\npath('articles/',include(articles.urls)), In the views.py file of the articles folder define the functions that we want to get rendered EG :  def article_list(request): return render(request,'articles/article_list.html') Run the server and view the necessary changes  MODELS  Reference- Video6 of Django-Playlist of The Net Ninja Models : It contains the tables and names that are to be displayed in the database\n Open models.py file in the articles app and make a class in there. FOR EG:  class Articles(models.Model): title=models.CharField(max_length=100) slug=models.SlugField() body=models.TextField() date=models.DateTimeField(auto_now_add=True) MIGRATIONS  Reference- Video7 of Django-Playlist of The Net Ninja Connects the database and the models.py file\n Firstly migrate unmigrated files by running the following commands : python manage.py migrate Create a migration file that will store changes related to migrations(made by us) Create it running the following command: python manage.py makemigrations — This creates a 0001_initial.py file under migrations folder in articles app folder To migrate the migrations made by us , run the following command: python manage.py migrate\n— This moves the model to database  USING DJANGO ORM  Reference- Video8 of Django-Playlist of The Net Ninja This helps to interact with the database\n Run python manage.py shell   Opens up an interactive shell to interact with the database using django codes  Firstly, we would need to import Articles in shell using the following command:  from articles.models import Articles (from outer folder name.model file name import Class_Name) 30)Some commands to be used in the shell\n Articles.objects.all() // Lists the articles present in the database Create a new Article using the following command in shell article = Articles() Input the title in the article using the following command article.title = “hello world” save this article to the database using the following command- article.save() Various articles created manually are stores in the form of arrays - For EG: To access the first article run the following command - Articles.objects.all()[0]  // Inorder to show the title pf the article objects in ORM : -: Open the models.py file -: add the following function under the class of Articles-\ndef __str__(self): return self.title USING DJANGO ADMIN  Reference- Video9 of Django-Playlist of The Net Ninja — Used to fill database and control usage of our model\n Create the admin user(super user) using manage.py Run the following command - python manage.py createsuperuser  enter your details : User Name : abc Email ID : xyz@gmail.com Password : xxx In order to view your articles in the admins page, we need to register it in the admins.py file under articles app Firstly import the following -  from .models import Articles admin.site.register(Articles) Run the server and go to the admin webpage   We can see all other staff members registered under here along with the super user(green tick user) and our articles etc as well.  INSERTING PYTHON CODES IN HTML TEMPLATES USING TEMPLATE TAGS  Reference- Video10 of Django-Playlist of The Net Ninja\n  We want to dynamically input all the articles in the models.py file to our webpage Template tags are use to use python codes in out html files In html files we use {% %} for writing codes and {{ }} for outputting any data  Under the views.py file import Articles class from models.py file using the following code -  from .models import Articles Under the article_list function, pass the class Articles as a dictionary so that it can be used in the asrticle_list template  FOR EG: def article_list(request): # order all the articles present in the database by date  list_of_articles = Articles.object.all().order_by(\"date\") return render(request,'articles/article_list.html',{\"articles\":list_of_articles}) Open article_list.html under the templates folder in articles app In the article_list.html we can use {% %} for writing python codes and ({ }) for outputting any python code — Iterate through the dictionary_of_articles passed and print title,vody and date of each article using the following code in the body tag of html file  div class=\"articles\" {% for article in dictionary_of_articles %} div class=\"article\" h2 a href=\"#\" {{ article.title }} a h2 p {{ article.body }} p p {{ article.date }} p div {% endfor %} div Run the server and view the necessary changes made  USING MODEL METHODS  Reference- Video11 of Django-Playlist of The Net Ninja We dont want to list complete information over the articles page at one go\n Open the models.py file under the articles folder and define the following function to display the first fifty characters on the articles webpage  def snippets(self): return self.body[:50] #dislpays the first fifty characters over the Blogs first page In the article_list.html in the templates folder of the articles app, instead of printing article.body print article.snippets  Working with static files that is css files etc  Reference- Video12 of Django-Playlist of The Net Ninja\n We can allow Django to save our staticfiles In the urls.py file under the BlogMaterials folder, add the following code - Firstly import the following  -from django.contrib.staticfiles.urls import staticfiles_urlpatterns #Then write the following below url_patterns  urlpatterns += staticfiles_urlpatterns() In the settings.py file Under the “STATIC_URL” value static would be present   Now you can find your static files over the webpage . FOR EG: style.css can be found over ..../static/style.css  In the settings.py file add STATICFILES_DIRS at the bottom(just below STATIC_URLS) and write the following there   firstly import os in settings.py file then,  STATICFILES_DIRS=( os.path.join(BASE_DIR,'assets'), #Join the base_dir ectory(here BLogMaterials) and the assets folder containing the static files ) Create a folder named assets under your base directory(BlogMaterials) and enter static files such as styles.css over there In order to connect this styles.css with the articles_list.html connect it using  link rel = \"stylesheet\" href=\"/static/styles.css\"  A better way to load styles.css or other staticfiles in the html file is using the templates tags  Write {% load static %} # above Doctype(at top of html file)  # Then ,write the following  link rel = \"stylesheet\" href=\"{% static 'styles.css' %}\"  This will ensure that whenever the directory for staticfiles are changed we dont have to re write the directory name at every required place  Build up your styles.css file and run server to view the changes made  Extending template tags to be used in combining html files  Reference- Video13 of Django-Playlist of The Net Ninja\n Create a base_layout for html files which is to be used by all other html files in the main directory(BlogMaterial/templates) – Open the templates folder under articles and create a base_layout html file with template tag as shown below. All other html files should only start and end at the area between these template tags eg :  {% load static %} DOCTYPE html html head titleARTICLEStitle link rel = \"stylesheet\" href=\"{% static 'styles.css' %}\" head body div class=\"wrapper\" {% block content %} {% endblock %} div body html  Now all other html files will have this basic tempplate if it uses it eg :  Articles_list.html in artilces/templates folder {% extends 'base_layout.html' %} {% block content %} h1ARTICLES LISTh1 div class=\"articles\" {% for article in dictionary_of_articles %} div class=\"article\" h2 a href=\"#\" {{ article.title }} a h2 p {{ article.snippets }} p p {{ article.date }} p div {% endfor %} div {% endblock %}  We need to mention the above mentioned template tag if we want to extend it from the base_layout.html  {% extends 'base_layout.html' %}  The extended code is written between two template tags that is {% block content %} and {% endblock %} which also present in the base_layout.html file  Using url parameters and RegeX  Reference- Video14 of Django-Playlist of The Net Ninja\n In views.py file under articles folder define function to see the article response after importing HttpResponse from django  from django.http import HttpResponse def article_details(request,slug): return HttpResponse(slug) In urls.py file under the articles folder under the urlpatterns section write the following code  re_path(r'^(?Pslug[\\w-]+)/$', views.article_detail), # after importing repath from django  # We can also use regex instead :  re_path(r'^(?Pslug[\\w-]+)/$', views.article_detail), NAMED URLs(URL TAGS and URL NAMES)  Reference- Video15 of Django-PLaylist of The Net Ninja Changing the links to which the page directs on clicking a respective article.: This is done using named URLs.\n Under the urls.py file in the articles folder add names to the respective urls  # contains the index page in #articles  path('',views.article_list, name=\"list\" ), # re_path(r'^(?Pslug[\\w-]+)/$', views.article_detail), re_path(r'^(?Pslug[\\w-]+)/$', views.article_detail, name=\"detail\"),  Also, add a namespace above say app_name = 'articles'  as this will prevent the names list and details to be used by different urls.py file  Under the base_layout.html(in Templates folder) within the wrapper code add the following line,  h1 a href=\"{% url 'articles:list' %}\"img src=\"{% static 'logo.png' %}\"ah1 Under the article_list.html in articles folder , add the following line (replacing #)  Replace # with \"{% url'articles:detail' article.slug%}\" Run the server to view the changes made  ","wordCount":"2047","inLanguage":"en","datePublished":"2020-12-16T01:25:53+05:30","dateModified":"2020-12-16T01:25:53+05:30","author":{"@type":"Person","name":"Sanchit Sinha"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sanchit-sinha.github.io/logBook/posts/working-with-django/"},"publisher":{"@type":"Organization","name":"LogBook","logo":{"@type":"ImageObject","url":"https://sanchit-sinha.github.io/logBook/%3Clink%20/%20abs%20url%3E"}}}</script>
+</head>
+<body id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://sanchit-sinha.github.io/logBook accesskey=h title="LogBook (Alt + H)">
+LogBook</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</span>
+</div>
+<ul id=menu>
+<li>
+<a href=https://sanchit-sinha.github.io/ title=Home>
+<span>Home</span>
+</a>
+</li>
+<li>
+<a href=https://sanchit-sinha.github.io/logBook/archives title=Archive>
+<span>Archive</span>
+</a>
+</li>
+<li>
+<a href=https://sanchit-sinha.github.io/logBook/categories/ title=Categories>
+<span>Categories</span>
+</a>
+</li>
+<li>
+<a href=https://sanchit-sinha.github.io/logBook/tags/ title=Tags>
+<span>Tags</span>
+</a>
+</li>
+<li>
+<a href=https://sanchit-sinha.github.io/logBook/search/ title="Search (Alt + /)" accesskey=/>
+<span>Search</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<div class=breadcrumbs><a href=https://sanchit-sinha.github.io/logBook>Home</a>&nbsp;»&nbsp;<a href=https://sanchit-sinha.github.io/logBook/posts/>Posts</a></div>
+<h1 class=post-title>
+Working with Django
+</h1>
+<div class=post-meta>December 16, 2020&nbsp;·&nbsp;10 min&nbsp;·&nbsp;Sanchit Sinha
+</div>
+</header> <div class=toc>
+<details open>
+<summary accesskey=c title="(Alt + C)">
+<span class=details>Table of Contents</span>
+</summary>
+<div class=inner><ul>
+<li>
+<a href=#setting-up-virtual-environment-for-using-django aria-label="SETTING UP VIRTUAL ENVIRONMENT FOR USING DJANGO">SETTING UP VIRTUAL ENVIRONMENT FOR USING DJANGO</a></li>
+<li>
+<a href=#creating-folder-for-storing-your-django-project aria-label="CREATING FOLDER FOR STORING YOUR DJANGO PROJECT">CREATING FOLDER FOR STORING YOUR DJANGO PROJECT</a></li>
+<li>
+<a href=#starting-with-your-django-project aria-label="STARTING WITH YOUR DJANGO-PROJECT">STARTING WITH YOUR DJANGO-PROJECT</a></li>
+<li>
+<a href=#using-urls-and-views-file-in-your-django-project-folder aria-label="USING URLs and Views File in your Django-Project folder">USING URLs and Views File in your Django-Project folder</a></li>
+<li>
+<a href=#using-htmltemplates-in-urlspy-and-viewspy-file aria-label="USING HTMLTemplates in urls.py and views.py file">USING HTMLTemplates in urls.py and views.py file</a></li>
+<li>
+<a href=#using-django-apps aria-label="Using Django Apps">Using Django Apps</a></li>
+<li>
+<a href=#models aria-label=MODELS>MODELS</a></li>
+<li>
+<a href=#migrations aria-label=MIGRATIONS>MIGRATIONS</a></li>
+<li>
+<a href=#using-django-orm aria-label="USING DJANGO ORM">USING DJANGO ORM</a></li>
+<li>
+<a href=#using-django-admin aria-label="USING DJANGO ADMIN">USING DJANGO ADMIN</a></li>
+<li>
+<a href=#inserting-python-codes-in-html-templates-using-template-tags aria-label="INSERTING PYTHON CODES IN HTML TEMPLATES USING TEMPLATE TAGS">INSERTING PYTHON CODES IN HTML TEMPLATES USING TEMPLATE TAGS</a></li>
+<li>
+<a href=#using-model-methods aria-label="USING MODEL METHODS">USING MODEL METHODS</a></li>
+<li>
+<a href=#working-with-static-files-that-is-css-files-etc aria-label="Working with static files that is css files etc">Working with static files that is css files etc</a></li>
+<li>
+<a href=#extending-template-tags-to-be-used-in-combining-html-files aria-label="Extending template tags to be used in combining html files">Extending template tags to be used in combining html files</a></li>
+<li>
+<a href=#using-url-parameters-and-regex aria-label="Using url parameters and RegeX">Using url parameters and RegeX</a></li>
+<li>
+<a href=#named-urlsurl-tags-and-url-names aria-label="NAMED URLs(URL TAGS and URL NAMES)">NAMED URLs(URL TAGS and URL NAMES)</a>
+</li>
+</ul>
+</div>
+</details>
+</div>
+<div class=post-content><p>-I&rsquo;ll be using VScode for building up my Django-Project
+-The integrated terminal really helped me in this</p>
+<blockquote>
+<p>These django steps would be with respect to the steps I followed in order to learn Django and create my very own blog</p>
+</blockquote>
+<h1 id=setting-up-virtual-environment-for-using-django>SETTING UP VIRTUAL ENVIRONMENT FOR USING DJANGO<a hidden class=anchor aria-hidden=true href=#setting-up-virtual-environment-for-using-django>#</a></h1>
+<ol>
+<li>First of all install a virtual environment for using Django.</li>
+<li>Activate the virtual environment using <code>. env/bin/activate</code></li>
+</ol>
+<h1 id=creating-folder-for-storing-your-django-project>CREATING FOLDER FOR STORING YOUR DJANGO PROJECT<a hidden class=anchor aria-hidden=true href=#creating-folder-for-storing-your-django-project>#</a></h1>
+<ol start=3>
+<li>Make a folder that should contain your project.. FOR EG: <code>Folder named "BLOG"</code></li>
+</ol>
+<h1 id=starting-with-your-django-project>STARTING WITH YOUR DJANGO-PROJECT<a hidden class=anchor aria-hidden=true href=#starting-with-your-django-project>#</a></h1>
+<blockquote>
+<p>Reference- Video2 of Django Playlist of The Net Ninja:</p>
+</blockquote>
+<ol start=4>
+<li>Move to your required folder .. cd Blog</li>
+<li>Type the following command in the terminal
+django-admin startproject projectname - This would create a folder named foldername with required materials present in it</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>FOR EG: django<span style=color:#f92672>-</span>admin startproject BlogMaterials
+</code></pre></div><ol start=6>
+<li>Move into your folder created using django-admin startproject say &ldquo;BlogMaterials&rdquo; using cd foldername</li>
+<li>RUN-SERVER
+You can create your own server and view your project-works over there</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>    Run : python manage.py runserver
+</code></pre></div><h1 id=using-urls-and-views-file-in-your-django-project-folder>USING URLs and Views File in your Django-Project folder<a hidden class=anchor aria-hidden=true href=#using-urls-and-views-file-in-your-django-project-folder>#</a></h1>
+<blockquote>
+<p>Reference- Video3 of Django-Playlist of The Net Ninja</p>
+</blockquote>
+<ol start=8>
+<li>
+<p>Create a file named views.py in the folder containing your urls.py file
+We can add html links to our project in the urls.py and the respective functions to be rendered by clicking them in our views.py file</p>
+</li>
+<li>
+<p>Add urls to your urls.py file
+Firstly import views by typing : <code>from. import views</code> in your urls.py file</p>
+<pre><code> FOR EG: path('about/',views.about), : The &quot;about&quot; link would be created and about function would be requested when clicked over it 
+</code></pre>
+</li>
+<li>
+<p>Define your required function in the view.py file
+Firstly import the following files : Type &ldquo;from django.http import HttpResponse&rdquo; in view.py file</p>
+<pre><code>FOR EG : 
+def about(request):
+        return HttpResponse(&quot;about&quot;) 
+</code></pre>
+<p>The above function prints &ldquo;about&rdquo; on the page when request is sent to the required page</p>
+</li>
+<li>
+<p>Run server and view your project so far
+Code :
+python manage.py runserver</p>
+</li>
+</ol>
+<h1 id=using-htmltemplates-in-urlspy-and-viewspy-file>USING HTMLTemplates in urls.py and views.py file<a hidden class=anchor aria-hidden=true href=#using-htmltemplates-in-urlspy-and-viewspy-file>#</a></h1>
+<blockquote>
+<p>Reference- Video4 of Django-Playlist of The Net Ninja</p>
+</blockquote>
+<ol start=12>
+<li>Create a &ldquo;<code>templates</code>&rdquo; folder in the main folder that is &ldquo;BlogMaterials&rdquo;.</li>
+<li>Add homepage.html and about.html in this &ldquo;templates&rdquo; folder and add html content in it which you want to be displayed over the browser</li>
+<li>Add path of template folder in settings.py file.
+Open settings.py and move to the section named TEMPPLATES
+Under the <code>TEMPLATES</code> section add the relative path of your template folder in &ldquo;<code>DIRS</code>&rdquo; part // It will look under temmplate folder of each app</li>
+<li>Change the respective functions in views.py file
+FOR EG :
+Firstly import the following in your views.py files</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>    from django.shortcuts import render
+    def about(request)<span style=color:#f92672>:</span>
+            <span style=color:#66d9ef>return</span> render(request,<span style=color:#960050;background-color:#1e0010>&#39;</span>about.html)    
+</code></pre></div><ol start=16>
+<li>Run server to and view the respective changes</li>
+</ol>
+<h1 id=using-django-apps>Using Django Apps<a hidden class=anchor aria-hidden=true href=#using-django-apps>#</a></h1>
+<blockquote>
+<p>Reference- Video5 of Django-Playlist of The Net Ninja</p>
+</blockquote>
+<ul>
+<li>MAIN FRAMEWORK :
+<ul>
+<li>Django project
+<ul>
+<li>Djangonautic Apps</li>
+<li>articles app</li>
+<li>accounts app<br>
+( BlogMaterials)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol start=17>
+<li>Run:</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>python manage.py startapp articles
+</code></pre></div><ul>
+<li>This creates articles folder along with required files</li>
+</ul>
+<ol start=18>
+<li>Register this articles folder in the settings.py file in the main folder under the <code>INSTALLED_APPS</code> section</li>
+<li>Create <code>urls.py</code> file in articles folder in the main folder of Django Project
+You can copy paste your urls.py file in this articles folder as well.
+Remove the lines containing admin from the urls.py file in this folder as those are not required</li>
+<li>Create a template folder in this main articles folder and create another aricles folder under this template folder .
+Store your respective html files in this folder say : article_list.html</li>
+<li>Add path of urls.py file of abouts folder in the urls.py file of your main folder(&ldquo;BLogMaterials&rdquo;) so that the server knows that the urls.py file of articles file could be used
+EG : Add the following code in path :
+Firstly import &ldquo;include&rdquo; using the following code :</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>from django.conf.urls import url,include
+</code></pre></div><p>Then under the urlpatterns section write the following code :</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>path(<span style=color:#960050;background-color:#1e0010>&#39;</span>articles<span style=color:#f92672>/</span><span style=color:#960050;background-color:#1e0010>&#39;</span>,include(articles.urls)),
+</code></pre></div><ol start=22>
+<li>In the views.py file of the articles folder define the functions that we want to get rendered
+EG :</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>def article_list(request)<span style=color:#f92672>:</span>
+        <span style=color:#66d9ef>return</span> render(request,<span style=color:#960050;background-color:#1e0010>&#39;</span>articles<span style=color:#f92672>/</span>article_list.html<span style=color:#960050;background-color:#1e0010>&#39;</span>)
+</code></pre></div><ol start=23>
+<li>Run the server and view the necessary changes</li>
+</ol>
+<h1 id=models>MODELS<a hidden class=anchor aria-hidden=true href=#models>#</a></h1>
+<blockquote>
+<p>Reference- Video6 of Django-Playlist of The Net Ninja
+<em>Models : It contains the tables and names that are to be displayed in the database</em></p>
+</blockquote>
+<ol start=24>
+<li>Open models.py file in the articles app and make a class in there.
+FOR EG:</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>    <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>Articles</span>(models.Model)<span style=color:#f92672>:</span>
+            title<span style=color:#f92672>=</span>models.CharField(max_length<span style=color:#f92672>=</span><span style=color:#ae81ff>100</span>)
+            slug<span style=color:#f92672>=</span>models.SlugField()
+            body<span style=color:#f92672>=</span>models.TextField()
+            date<span style=color:#f92672>=</span>models.DateTimeField(auto_now_add<span style=color:#f92672>=</span>True)
+</code></pre></div><h1 id=migrations>MIGRATIONS<a hidden class=anchor aria-hidden=true href=#migrations>#</a></h1>
+<blockquote>
+<p>Reference- Video7 of Django-Playlist of The Net Ninja
+Connects the database and the models.py file</p>
+</blockquote>
+<ol start=25>
+<li>Firstly migrate unmigrated files by running the following commands :
+python manage.py migrate</li>
+<li>Create a migration file that will store changes related to migrations(made by us) <br>
+Create it running the following command: python manage.py makemigrations
+&mdash; This creates a <code>0001_initial.py</code> file under migrations folder in articles app folder</li>
+<li>To migrate the migrations made by us , run the following command:
+python manage.py migrate<br>
+&mdash; This moves the model to database</li>
+</ol>
+<h1 id=using-django-orm>USING DJANGO ORM<a hidden class=anchor aria-hidden=true href=#using-django-orm>#</a></h1>
+<blockquote>
+<p>Reference- Video8 of Django-Playlist of The Net Ninja
+<em>This helps to interact with the database</em></p>
+</blockquote>
+<ol start=28>
+<li>Run python manage.py shell</li>
+</ol>
+<ul>
+<li>Opens up an interactive shell to interact with the database using django codes</li>
+</ul>
+<ol start=29>
+<li>Firstly, we would need to import Articles in shell using the following command:</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>from articles.models import Articles (from outer folder name.model file name import Class_Name)
+</code></pre></div><p>30)Some commands to be used in the shell</p>
+<ul>
+<li>Articles.objects.all() // Lists the articles present in the database</li>
+<li>Create a new Article using the following command in shell
+article = Articles()</li>
+<li>Input the title in the article using the following command
+article.title = &ldquo;hello world&rdquo;</li>
+<li>save this article to the database using the following command-
+article.save()</li>
+<li>Various articles created manually are stores in the form of arrays -
+For EG: To access the first article run the following command -
+Articles.objects.all()[0]</li>
+</ul>
+<p>// Inorder to show the title pf the article objects in ORM :
+-: Open the models.py file
+-: add the following function under the class of Articles-</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>def __str__(self)<span style=color:#f92672>:</span>
+   <span style=color:#66d9ef>return</span> self.title
+</code></pre></div><h1 id=using-django-admin>USING DJANGO ADMIN<a hidden class=anchor aria-hidden=true href=#using-django-admin>#</a></h1>
+<blockquote>
+<p>Reference- Video9 of Django-Playlist of The Net Ninja
+&mdash; Used to fill database and control usage of our model</p>
+</blockquote>
+<ol start=31>
+<li>Create the admin user(super user) using manage.py
+Run the following command - python manage.py createsuperuser</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py>enter your details : User Name : abc
+                     Email ID  : xyz<span style=color:#a6e22e>@gmail</span><span style=color:#f92672>.</span>com
+                     Password  : xxx
+</code></pre></div><ol start=33>
+<li>In order to view your articles in the admins page, we need to register it in the admins.py file under articles app
+Firstly import the following -</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>from .models import Articles
+admin.site.<span style=color:#66d9ef>register</span>(Articles)
+</code></pre></div><ol start=32>
+<li>Run the server and go to the admin webpage</li>
+</ol>
+<ul>
+<li>We can see all other staff members registered under here along with the super user(green tick user) and our articles etc as well.</li>
+</ul>
+<h1 id=inserting-python-codes-in-html-templates-using-template-tags>INSERTING PYTHON CODES IN HTML TEMPLATES USING TEMPLATE TAGS<a hidden class=anchor aria-hidden=true href=#inserting-python-codes-in-html-templates-using-template-tags>#</a></h1>
+<blockquote>
+<p>Reference- Video10 of Django-Playlist of The Net Ninja</p>
+</blockquote>
+<ul>
+<li>We want to dynamically input all the articles in the models.py file to our webpage</li>
+<li>Template tags are use to use python codes in out html files</li>
+<li>In html files we use {% %} for writing codes and {{ }} for outputting any data</li>
+</ul>
+<ol start=33>
+<li>Under the views.py file import Articles class from models.py file using the following code -</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>    from .models import Articles
+</code></pre></div><ol start=34>
+<li>Under the article_list function, pass the class Articles as a dictionary so that it can be used in the asrticle_list template</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>FOR EG: 
+        def article_list(request)<span style=color:#f92672>:</span>
+                <span style=color:#75715e># order all the articles present in the database by date 
+</span><span style=color:#75715e></span>                list_of_articles <span style=color:#f92672>=</span> Articles.object.all().order_by(<span style=color:#e6db74>&#34;date&#34;</span>) 
+                <span style=color:#66d9ef>return</span> render(request,<span style=color:#960050;background-color:#1e0010>&#39;</span>articles<span style=color:#f92672>/</span>article_list.html<span style=color:#960050;background-color:#1e0010>&#39;</span>,{<span style=color:#e6db74>&#34;articles&#34;</span><span style=color:#f92672>:</span>list_of_articles})
+</code></pre></div><ol start=35>
+<li>Open article_list.html under the templates folder in articles app</li>
+<li>In the article_list.html we can use <code>{% %}</code> for writing python codes and <code>({ })</code> for outputting any python code
+&mdash; Iterate through the dictionary_of_articles passed and print title,vody and date of each article using the following code in the body tag of html file</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>    <span style=color:#f92672>&lt;</span>div <span style=color:#66d9ef>class</span><span style=color:#960050;background-color:#1e0010>=&#34;</span><span style=color:#a6e22e>articles</span><span style=color:#e6db74>&#34;&gt;</span>
+        {<span style=color:#f92672>%</span> <span style=color:#66d9ef>for</span> article in dictionary_of_articles <span style=color:#f92672>%</span>}
+                <span style=color:#f92672>&lt;</span>div <span style=color:#66d9ef>class</span><span style=color:#960050;background-color:#1e0010>=&#34;</span><span style=color:#a6e22e>article</span><span style=color:#e6db74>&#34;&gt;</span>
+                        <span style=color:#f92672>&lt;</span>h2<span style=color:#f92672>&gt;</span> a href<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;#&#34;</span><span style=color:#f92672>&gt;</span> {{ article.title }} <span style=color:#f92672>&lt;/</span>a<span style=color:#f92672>&gt;</span> <span style=color:#f92672>&lt;/</span>h2<span style=color:#f92672>&gt;</span>
+                        <span style=color:#f92672>&lt;</span>p<span style=color:#f92672>&gt;</span> {{ article.body }} <span style=color:#f92672>&lt;/</span>p<span style=color:#f92672>&gt;</span>
+                        <span style=color:#f92672>&lt;</span>p<span style=color:#f92672>&gt;</span> {{ article.date }} <span style=color:#f92672>&lt;/</span>p<span style=color:#f92672>&gt;</span>
+                <span style=color:#f92672>&lt;/</span>div<span style=color:#f92672>&gt;</span>
+        {<span style=color:#f92672>%</span> endfor <span style=color:#f92672>%</span>}
+    <span style=color:#f92672>&lt;/</span>div<span style=color:#f92672>&gt;</span>
+</code></pre></div><ol start=37>
+<li>Run the server and view the necessary changes made</li>
+</ol>
+<h1 id=using-model-methods>USING MODEL METHODS<a hidden class=anchor aria-hidden=true href=#using-model-methods>#</a></h1>
+<blockquote>
+<p>Reference- Video11 of Django-Playlist of The Net Ninja
+<em>We dont want to list complete information over the articles page at one go</em></p>
+</blockquote>
+<ol start=38>
+<li>Open the models.py file under the articles folder and define the following function to display the first fifty characters on the articles webpage</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>def snippets(self)<span style=color:#f92672>:</span>
+        <span style=color:#66d9ef>return</span> self.body[<span style=color:#f92672>:</span><span style=color:#ae81ff>50</span>] <span style=color:#960050;background-color:#1e0010>#</span>dislpays the first fifty characters over the Blogs first page
+</code></pre></div><ol start=39>
+<li>In the article_list.html in the templates folder of the articles app, instead of printing article.body print article.snippets</li>
+</ol>
+<h1 id=working-with-static-files-that-is-css-files-etc>Working with static files that is css files etc<a hidden class=anchor aria-hidden=true href=#working-with-static-files-that-is-css-files-etc>#</a></h1>
+<blockquote>
+<p>Reference- Video12 of Django-Playlist of The Net Ninja</p>
+</blockquote>
+<ol start=40>
+<li>We can allow Django to save our staticfiles
+In the urls.py file under the BlogMaterials folder, add the following code
+- Firstly import the following</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>    <span style=color:#f92672>-</span>from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+        <span style=color:#75715e>#Then write the following below url_patterns 
+</span><span style=color:#75715e></span>    urlpatterns <span style=color:#f92672>+=</span> staticfiles_urlpatterns()
+</code></pre></div><ol start=41>
+<li>In the settings.py file Under the &ldquo;STATIC_URL&rdquo; value static would be present</li>
+</ol>
+<ul>
+<li>Now you can find your static files over the webpage .
+FOR EG: style.css can be found over <code>..../static/style.css</code></li>
+</ul>
+<ol start=42>
+<li>In the settings.py file add STATICFILES_DIRS at the bottom(just below STATIC_URLS) and write the following there</li>
+</ol>
+<ul>
+<li>firstly import os in settings.py file
+then,</li>
+</ul>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>    STATICFILES_DIRS<span style=color:#f92672>=</span>(
+            os.path.join(BASE_DIR,<span style=color:#960050;background-color:#1e0010>&#39;</span>assets<span style=color:#960050;background-color:#1e0010>&#39;</span>), <span style=color:#960050;background-color:#1e0010>#</span>Join the base_dir ectory(here BLogMaterials) and the assets folder containing the <span style=color:#66d9ef>static</span> files
+    )
+</code></pre></div><ol start=43>
+<li>Create a folder named assets under your base directory(BlogMaterials) and enter static files such as styles.css over there</li>
+<li>In order to connect this styles.css with the articles_list.html connect it using</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>    <span style=color:#f92672>&lt;</span>link rel <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;stylesheet&#34;</span> href<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;/static/styles.css&#34;</span><span style=color:#f92672>&gt;</span>
+</code></pre></div><ul>
+<li>A better way to load styles.css or other staticfiles in the html file is using the templates tags</li>
+</ul>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>Write 
+        {<span style=color:#f92672>%</span> load <span style=color:#66d9ef>static</span> <span style=color:#f92672>%</span>}
+        <span style=color:#75715e># above Doctype(at top of html file)
+</span><span style=color:#75715e></span>        <span style=color:#75715e># Then ,write the following
+</span><span style=color:#75715e></span>      <span style=color:#f92672>&lt;</span>link rel <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;stylesheet&#34;</span> href<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{% static &#39;styles.css&#39; %}&#34;</span><span style=color:#f92672>&gt;</span>
+</code></pre></div><ul>
+<li>This will ensure that whenever the directory for staticfiles are changed we dont have to re write the directory name at every required place</li>
+</ul>
+<ol start=45>
+<li>Build up your <code>styles.css</code> file and run server to view the changes made</li>
+</ol>
+<h1 id=extending-template-tags-to-be-used-in-combining-html-files>Extending template tags to be used in combining html files<a hidden class=anchor aria-hidden=true href=#extending-template-tags-to-be-used-in-combining-html-files>#</a></h1>
+<blockquote>
+<p>Reference- Video13 of Django-Playlist of The Net Ninja</p>
+</blockquote>
+<ol start=46>
+<li>Create a base_layout for html files which is to be used by all other html files in the main directory(BlogMaterial/templates)
+&ndash; Open the templates folder under articles and create a base_layout html file with template tag as shown below.
+All other html files should only start and end at the area between these template tags
+eg :</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>    {<span style=color:#f92672>%</span> load <span style=color:#66d9ef>static</span> <span style=color:#f92672>%</span>}
+    <span style=color:#f92672>&lt;!</span>DOCTYPE html<span style=color:#f92672>&gt;</span>
+    <span style=color:#f92672>&lt;</span>html<span style=color:#f92672>&gt;</span>
+
+    <span style=color:#f92672>&lt;</span>head<span style=color:#f92672>&gt;</span>
+            <span style=color:#f92672>&lt;</span>title<span style=color:#f92672>&gt;</span>ARTICLES<span style=color:#f92672>&lt;/</span>title<span style=color:#f92672>&gt;</span>
+            <span style=color:#f92672>&lt;</span>link rel <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;stylesheet&#34;</span> href<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{% static &#39;styles.css&#39; %}&#34;</span><span style=color:#f92672>&gt;</span>
+    <span style=color:#f92672>&lt;/</span>head<span style=color:#f92672>&gt;</span>
+
+    <span style=color:#f92672>&lt;</span>body<span style=color:#f92672>&gt;</span>
+            <span style=color:#f92672>&lt;</span>div <span style=color:#66d9ef>class</span><span style=color:#960050;background-color:#1e0010>=&#34;</span><span style=color:#a6e22e>wrapper</span><span style=color:#e6db74>&#34;&gt;</span>
+                    {<span style=color:#f92672>%</span> block content <span style=color:#f92672>%</span>}
+                    {<span style=color:#f92672>%</span> endblock <span style=color:#f92672>%</span>}
+            <span style=color:#f92672>&lt;/</span>div<span style=color:#f92672>&gt;</span>
+    <span style=color:#f92672>&lt;/</span>body<span style=color:#f92672>&gt;</span>
+
+    <span style=color:#f92672>&lt;/</span>html<span style=color:#f92672>&gt;</span>
+</code></pre></div><ul>
+<li>Now all other html files will have this basic tempplate if it uses it
+eg :</li>
+</ul>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>Articles_list.html in artilces<span style=color:#f92672>/</span>templates folder
+        {<span style=color:#f92672>%</span> extends <span style=color:#960050;background-color:#1e0010>&#39;</span>base_layout.html<span style=color:#960050;background-color:#1e0010>&#39;</span> <span style=color:#f92672>%</span>}
+        {<span style=color:#f92672>%</span> block content <span style=color:#f92672>%</span>}
+                <span style=color:#f92672>&lt;</span>h1<span style=color:#f92672>&gt;</span>ARTICLES LIST<span style=color:#f92672>&lt;/</span>h1<span style=color:#f92672>&gt;</span>
+                <span style=color:#f92672>&lt;</span>div <span style=color:#66d9ef>class</span><span style=color:#960050;background-color:#1e0010>=&#34;</span><span style=color:#a6e22e>articles</span><span style=color:#e6db74>&#34;&gt;</span>
+                        {<span style=color:#f92672>%</span> <span style=color:#66d9ef>for</span> article in dictionary_of_articles <span style=color:#f92672>%</span>}
+                                <span style=color:#f92672>&lt;</span>div <span style=color:#66d9ef>class</span><span style=color:#960050;background-color:#1e0010>=&#34;</span><span style=color:#a6e22e>article</span><span style=color:#e6db74>&#34;&gt;</span>
+                                        <span style=color:#f92672>&lt;</span>h2<span style=color:#f92672>&gt;</span>
+                                                <span style=color:#f92672>&lt;</span>a href<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;#&#34;</span><span style=color:#f92672>&gt;</span>
+                                                        {{ article.title }}
+                                                <span style=color:#f92672>&lt;/</span>a<span style=color:#f92672>&gt;</span>
+                                        <span style=color:#f92672>&lt;/</span>h2<span style=color:#f92672>&gt;</span>
+                                        <span style=color:#f92672>&lt;</span>p<span style=color:#f92672>&gt;</span>
+                                                {{ article.snippets }}
+                                        <span style=color:#f92672>&lt;/</span>p<span style=color:#f92672>&gt;</span>
+                                        <span style=color:#f92672>&lt;</span>p<span style=color:#f92672>&gt;</span>
+                                                {{ article.date }}
+                                        <span style=color:#f92672>&lt;/</span>p<span style=color:#f92672>&gt;</span>
+                                <span style=color:#f92672>&lt;/</span>div<span style=color:#f92672>&gt;</span>
+                        {<span style=color:#f92672>%</span> endfor <span style=color:#f92672>%</span>}
+                <span style=color:#f92672>&lt;/</span>div<span style=color:#f92672>&gt;</span>
+        {<span style=color:#f92672>%</span> endblock <span style=color:#f92672>%</span>}
+</code></pre></div><ul>
+<li>We need to mention the above mentioned template tag if we want to extend it from the base_layout.html</li>
+</ul>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>    {<span style=color:#f92672>%</span> extends <span style=color:#960050;background-color:#1e0010>&#39;</span>base_layout.html<span style=color:#960050;background-color:#1e0010>&#39;</span> <span style=color:#f92672>%</span>}
+</code></pre></div><ul>
+<li>The extended code is written between two template tags that is <code>{% block content %}</code> and <code>{% endblock %}</code> which also present in the <code>base_layout.html</code> file</li>
+</ul>
+<h1 id=using-url-parameters-and-regex>Using url parameters and RegeX<a hidden class=anchor aria-hidden=true href=#using-url-parameters-and-regex>#</a></h1>
+<blockquote>
+<p>Reference- Video14 of Django-Playlist of The Net Ninja</p>
+</blockquote>
+<ol start=47>
+<li>In views.py file under articles folder define function to see the article response after importing HttpResponse from django</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>    from django.http import HttpResponse
+    def article_details(request,slug)<span style=color:#f92672>:</span>
+    <span style=color:#66d9ef>return</span> HttpResponse(slug)
+</code></pre></div><ol start=48>
+<li>In <code>urls.py</code> file under the articles folder under the urlpatterns section write the following code</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>    re_path(r<span style=color:#960050;background-color:#1e0010>&#39;</span><span style=color:#f92672>^</span>(<span style=color:#f92672>?</span>P<span style=color:#f92672>&lt;</span>slug<span style=color:#f92672>&gt;</span>[<span style=color:#960050;background-color:#1e0010>\</span>w<span style=color:#f92672>-</span>]<span style=color:#f92672>+</span>)<span style=color:#f92672>/</span><span style=color:#960050;background-color:#1e0010>$&#39;</span>, views.article_detail),
+    <span style=color:#75715e># after importing repath from django
+</span><span style=color:#75715e></span>    <span style=color:#75715e>#  We can also use regex instead : 
+</span><span style=color:#75715e></span>    re_path(r<span style=color:#960050;background-color:#1e0010>&#39;</span><span style=color:#f92672>^</span>(<span style=color:#f92672>?</span>P<span style=color:#f92672>&lt;</span>slug<span style=color:#f92672>&gt;</span>[<span style=color:#960050;background-color:#1e0010>\</span>w<span style=color:#f92672>-</span>]<span style=color:#f92672>+</span>)<span style=color:#f92672>/</span><span style=color:#960050;background-color:#1e0010>$&#39;</span>, views.article_detail),
+</code></pre></div><h1 id=named-urlsurl-tags-and-url-names>NAMED URLs(URL TAGS and URL NAMES)<a hidden class=anchor aria-hidden=true href=#named-urlsurl-tags-and-url-names>#</a></h1>
+<blockquote>
+<p>Reference- Video15 of Django-PLaylist of The Net Ninja
+Changing the links to which the page directs on clicking a respective article.: This is done using named URLs.</p>
+</blockquote>
+<ol start=49>
+<li>Under the urls.py file in the articles folder add names to the respective urls</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>    <span style=color:#75715e># contains the index page in #articles 
+</span><span style=color:#75715e></span>    path(<span style=color:#960050;background-color:#1e0010>&#39;&#39;</span>,views.article_list, name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;list&#34;</span> ), 
+    <span style=color:#960050;background-color:#1e0010>#</span> re_path(r<span style=color:#960050;background-color:#1e0010>&#39;</span><span style=color:#f92672>^</span>(<span style=color:#f92672>?</span>P<span style=color:#f92672>&lt;</span>slug<span style=color:#f92672>&gt;</span>[<span style=color:#960050;background-color:#1e0010>\</span>w<span style=color:#f92672>-</span>]<span style=color:#f92672>+</span>)<span style=color:#f92672>/</span><span style=color:#960050;background-color:#1e0010>$&#39;</span>, views.article_detail),
+    re_path(r<span style=color:#960050;background-color:#1e0010>&#39;</span><span style=color:#f92672>^</span>(<span style=color:#f92672>?</span>P<span style=color:#f92672>&lt;</span>slug<span style=color:#f92672>&gt;</span>[<span style=color:#960050;background-color:#1e0010>\</span>w<span style=color:#f92672>-</span>]<span style=color:#f92672>+</span>)<span style=color:#f92672>/</span><span style=color:#960050;background-color:#1e0010>$&#39;</span>, views.article_detail, name<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;detail&#34;</span>),
+</code></pre></div><ul>
+<li>Also, add a namespace above say
+<code>app_name = 'articles' </code>
+as this will prevent the names <code>list</code> and <code>details</code> to be used by different <code>urls.py</code> file</li>
+</ul>
+<ol start=50>
+<li>Under the base_layout.html(in Templates folder) within the wrapper code add the following line,</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>   <span style=color:#f92672>&lt;</span>h1<span style=color:#f92672>&gt;</span> <span style=color:#f92672>&lt;</span>a href<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{% url &#39;articles:list&#39; %}&#34;</span><span style=color:#f92672>&gt;&lt;</span>img src<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{% static &#39;logo.png&#39; %}&#34;</span><span style=color:#f92672>&lt;/</span>a<span style=color:#f92672>&gt;&lt;/</span>h1<span style=color:#f92672>&gt;</span>
+</code></pre></div><ol start=51>
+<li>Under the article_list.html in articles folder , add the following line (replacing #)</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++>    Replace <span style=color:#960050;background-color:#1e0010>#</span> with <span style=color:#e6db74>&#34;{% url&#39;articles:detail&#39; article.slug%}&#34;</span>
+</code></pre></div><ol start=52>
+<li>Run the server to view the changes made</li>
+</ol>
+</div>
+<footer class=post-footer>
+<ul class=post-tags>
+<li><a href=https://sanchit-sinha.github.io/logBook/tags/software/>Software</a></li>
+<li><a href=https://sanchit-sinha.github.io/logBook/tags/django/>Django</a></li>
+</ul>
+<nav class=paginav>
+<a class=prev href=https://sanchit-sinha.github.io/logBook/posts/basics-of-bash/>
+<span class=title>« Prev Page</span>
+<br>
+<span>Basics of bash</span>
+</a>
+<a class=next href=https://sanchit-sinha.github.io/logBook/posts/basics-of-php/>
+<span class=title>Next Page »</span>
+<br>
+<span>Basics of PHP</span>
+</a>
+</nav>
+<div class=share-buttons>
+<a target=_blank rel="noopener noreferrer" aria-label="share Working with Django on twitter" href="https://twitter.com/intent/tweet/?text=Working%20with%20Django&url=https%3a%2f%2fsanchit-sinha.github.io%2flogBook%2fposts%2fworking-with-django%2f&hashtags=Software%2cDjango"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM195.519 424.544c135.939.0 210.268-112.643 210.268-210.268.0-3.218.0-6.437-.153-9.502 14.406-10.421 26.973-23.448 36.935-38.314-13.18 5.824-27.433 9.809-42.452 11.648 15.326-9.196 26.973-23.602 32.49-40.92-14.252 8.429-30.038 14.56-46.896 17.931-13.487-14.406-32.644-23.295-53.946-23.295-40.767.0-73.87 33.104-73.87 73.87.0 5.824.613 11.494 1.992 16.858-61.456-3.065-115.862-32.49-152.337-77.241-6.284 10.881-9.962 23.601-9.962 37.088.0 25.594 13.027 48.276 32.95 61.456-12.107-.307-23.448-3.678-33.41-9.196v.92c0 35.862 25.441 65.594 59.311 72.49-6.13 1.686-12.72 2.606-19.464 2.606-4.751.0-9.348-.46-13.946-1.38 9.349 29.426 36.628 50.728 68.965 51.341-25.287 19.771-57.164 31.571-91.8 31.571-5.977.0-11.801-.306-17.625-1.073 32.337 21.15 71.264 33.41 112.95 33.41z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Working with Django on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fsanchit-sinha.github.io%2flogBook%2fposts%2fworking-with-django%2f&title=Working%20with%20Django&summary=Working%20with%20Django&source=https%3a%2f%2fsanchit-sinha.github.io%2flogBook%2fposts%2fworking-with-django%2f"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Working with Django on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fsanchit-sinha.github.io%2flogBook%2fposts%2fworking-with-django%2f&title=Working%20with%20Django"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Working with Django on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fsanchit-sinha.github.io%2flogBook%2fposts%2fworking-with-django%2f"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Working with Django on whatsapp" href="https://api.whatsapp.com/send?text=Working%20with%20Django%20-%20https%3a%2f%2fsanchit-sinha.github.io%2flogBook%2fposts%2fworking-with-django%2f"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Working with Django on telegram" href="https://telegram.me/share/url?text=Working%20with%20Django&url=https%3a%2f%2fsanchit-sinha.github.io%2flogBook%2fposts%2fworking-with-django%2f"><svg viewBox="2 2 28 28"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg>
+</a>
+</div>
+</footer>
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2021 <a href=https://sanchit-sinha.github.io/logBook>LogBook</a></span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById('menu');menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+<script>document.querySelectorAll('pre > code').forEach(b=>{const c=b.parentNode.parentNode,a=document.createElement('button');a.classList.add('copy-code'),a.innerText='copy';function d(){a.innerText='copied!',setTimeout(()=>{a.innerText='copy'},2e3)}a.addEventListener('click',e=>{if('clipboard'in navigator){navigator.clipboard.writeText(b.textContent),d();return}const a=document.createRange();a.selectNodeContents(b);const c=window.getSelection();c.removeAllRanges(),c.addRange(a);try{document.execCommand('copy'),d()}catch(a){}c.removeRange(a)}),c.classList.contains("highlight")?c.appendChild(a):c.parentNode.firstChild==c||(b.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?b.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(a):b.parentNode.appendChild(a))})</script>
+</body>
+</html>

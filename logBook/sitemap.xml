@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sanchit-sinha.github.io/logBook/categories/</loc>
+    <lastmod>2021-08-10T00:48:17+05:30</lastmod>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/tags/dsa/</loc>
+    <lastmod>2021-08-10T00:48:17+05:30</lastmod>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/categories/dsa/</loc>
+    <lastmod>2021-08-10T00:48:17+05:30</lastmod>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/posts/heaps/</loc>
+    <lastmod>2021-08-10T00:48:17+05:30</lastmod>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/</loc>
+    <lastmod>2021-08-10T00:48:17+05:30</lastmod>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/posts/</loc>
+    <lastmod>2021-08-10T00:48:17+05:30</lastmod>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/tags/</loc>
+    <lastmod>2021-08-10T00:48:17+05:30</lastmod>
+  </url><url>
     <loc>https://sanchit-sinha.github.io/logBook/posts/basics-of-c&#43;&#43;/</loc>
     <lastmod>2021-07-26T21:16:42+05:30</lastmod>
   </url><url>
     <loc>https://sanchit-sinha.github.io/logBook/tags/c&#43;&#43;/</loc>
-    <lastmod>2021-07-26T21:16:42+05:30</lastmod>
-  </url><url>
-    <loc>https://sanchit-sinha.github.io/logBook/categories/</loc>
-    <lastmod>2021-07-26T21:16:42+05:30</lastmod>
-  </url><url>
-    <loc>https://sanchit-sinha.github.io/logBook/</loc>
-    <lastmod>2021-07-26T21:16:42+05:30</lastmod>
-  </url><url>
-    <loc>https://sanchit-sinha.github.io/logBook/posts/</loc>
     <lastmod>2021-07-26T21:16:42+05:30</lastmod>
   </url><url>
     <loc>https://sanchit-sinha.github.io/logBook/tags/programming/</loc>
@@ -23,10 +35,37 @@
     <loc>https://sanchit-sinha.github.io/logBook/categories/programming-basics/</loc>
     <lastmod>2021-07-26T21:16:42+05:30</lastmod>
   </url><url>
-    <loc>https://sanchit-sinha.github.io/logBook/tags/</loc>
-    <lastmod>2021-07-26T21:16:42+05:30</lastmod>
+    <loc>https://sanchit-sinha.github.io/logBook/tags/web-scrapping/</loc>
+    <lastmod>2020-12-30T02:20:01+05:30</lastmod>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/posts/web-scrapping/</loc>
+    <lastmod>2020-12-30T02:20:01+05:30</lastmod>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/tags/bash/</loc>
+    <lastmod>2020-12-20T02:10:32+05:30</lastmod>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/posts/basics-of-bash/</loc>
+    <lastmod>2020-12-20T02:10:32+05:30</lastmod>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/tags/django/</loc>
+    <lastmod>2020-12-16T01:25:53+05:30</lastmod>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/categories/skills/</loc>
+    <lastmod>2020-12-16T01:25:53+05:30</lastmod>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/tags/software/</loc>
+    <lastmod>2020-12-16T01:25:53+05:30</lastmod>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/posts/working-with-django/</loc>
+    <lastmod>2020-12-16T01:25:53+05:30</lastmod>
   </url><url>
     <loc>https://sanchit-sinha.github.io/logBook/archives/</loc>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/posts/basics-of-php/</loc>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/categories/ml/ds/</loc>
+  </url><url>
+    <loc>https://sanchit-sinha.github.io/logBook/tags/php/</loc>
   </url><url>
     <loc>https://sanchit-sinha.github.io/logBook/search/</loc>
   </url>
