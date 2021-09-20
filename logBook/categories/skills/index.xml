@@ -1,22 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Skills on LogBook</title>
+    <title>skills on LogBook</title>
     <link>https://sanchit-sinha.github.io/logBook/categories/skills/</link>
-    <description>Recent content in Skills on LogBook</description>
+    <description>Recent content in skills on LogBook</description>
     <image>
       <url>https://sanchit-sinha.github.io/logBook/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://sanchit-sinha.github.io/logBook/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 16 Dec 2020 01:25:53 +0530</lastBuildDate><atom:link href="https://sanchit-sinha.github.io/logBook/categories/skills/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Dec 2020 02:20:01 +0530</lastBuildDate><atom:link href="https://sanchit-sinha.github.io/logBook/categories/skills/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web Scrapping</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/skills/web-scrapping/</link>
+      <pubDate>Wed, 30 Dec 2020 02:20:01 +0530</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/skills/web-scrapping/</guid>
+      <description>Short Notes regarding Web Scrapping</description>
+    </item>
+    
+    <item>
+      <title>Basics of bash</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/skills/basics-of-bash/</link>
+      <pubDate>Sun, 20 Dec 2020 02:10:32 +0530</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/skills/basics-of-bash/</guid>
+      <description>Short Notes regarding bash</description>
+    </item>
+    
     <item>
       <title>Working with Django</title>
-      <link>https://sanchit-sinha.github.io/logBook/posts/working-with-django/</link>
+      <link>https://sanchit-sinha.github.io/logBook/posts/skills/working-with-django/</link>
       <pubDate>Wed, 16 Dec 2020 01:25:53 +0530</pubDate>
       
-      <guid>https://sanchit-sinha.github.io/logBook/posts/working-with-django/</guid>
+      <guid>https://sanchit-sinha.github.io/logBook/posts/skills/working-with-django/</guid>
       <description>Setting up and using Django for the first time</description>
+    </item>
+    
+    <item>
+      <title>Basics of PHP</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/skills/basics-of-php/</link>
+      <pubDate>Tue, 01 Dec 2020 02:24:46 +0530</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/skills/basics-of-php/</guid>
+      <description>Short Notes regarding PHP</description>
     </item>
     
   </channel>
