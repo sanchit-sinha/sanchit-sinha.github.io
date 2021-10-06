@@ -9,7 +9,16 @@
       <link>https://sanchit-sinha.github.io/logBook/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 10 Aug 2021 00:48:17 +0530</lastBuildDate><atom:link href="https://sanchit-sinha.github.io/logBook/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Oct 2021 22:06:01 +0530</lastBuildDate><atom:link href="https://sanchit-sinha.github.io/logBook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eulerian Path</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/eulerian-path/</link>
+      <pubDate>Tue, 05 Oct 2021 22:06:01 +0530</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/eulerian-path/</guid>
+      <description>Short notes on Eulerian Paths</description>
+    </item>
+    
     <item>
       <title>Heaps</title>
       <link>https://sanchit-sinha.github.io/logBook/posts/dsa/heaps/</link>
