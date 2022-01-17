@@ -9,13 +9,22 @@
       <link>https://sanchit-sinha.github.io/logBook/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 11 Jan 2022 14:25:52 +0530</lastBuildDate><atom:link href="https://sanchit-sinha.github.io/logBook/tags/4th-semiitk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Jan 2022 05:25:52 +0530</lastBuildDate><atom:link href="https://sanchit-sinha.github.io/logBook/tags/4th-semiitk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[EE250A] Control system Analysis</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/courses-iitk/ee250_control_system/</link>
+      <pubDate>Mon, 17 Jan 2022 05:25:52 +0530</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/courses-iitk/ee250_control_system/</guid>
+      <description>Short Notes on Control System and Analysis</description>
+    </item>
+    
     <item>
       <title>[MSO201A] Probability And Statistics</title>
-      <link>https://sanchit-sinha.github.io/logBook/posts/courses-iitk/probability_and_statistics/</link>
+      <link>https://sanchit-sinha.github.io/logBook/posts/courses-iitk/mso201_probability_and_statistics/</link>
       <pubDate>Tue, 11 Jan 2022 14:25:52 +0530</pubDate>
       
-      <guid>https://sanchit-sinha.github.io/logBook/posts/courses-iitk/probability_and_statistics/</guid>
+      <guid>https://sanchit-sinha.github.io/logBook/posts/courses-iitk/mso201_probability_and_statistics/</guid>
       <description>Short Notes on Probability and Statistics</description>
     </item>
     
