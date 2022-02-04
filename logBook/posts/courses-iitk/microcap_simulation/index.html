@@ -39,7 +39,7 @@
 <meta name=twitter:title content="Microcap Simulation">
 <meta name=twitter:description content="Info regarding Microcap and Microcap Simulation">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://sanchit-sinha.github.io/logBook/posts/"},{"@type":"ListItem","position":3,"name":"Microcap Simulation","item":"https://sanchit-sinha.github.io/logBook/posts/courses-iitk/microcap_simulation/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Microcap Simulation","name":"Microcap Simulation","description":"Info regarding Microcap and Microcap Simulation","keywords":["Microcap Simulation","6th-Sem@IITK"],"articleBody":"Microcap Simulation [ESC201P] Microcap elements   adding dependent sources : component - analog primitive - dependent sources\n  adding sliders: run dynamic DC analysis - dynamic dc tab - add slider\n  add diode: we choose diode In4001\n  add bjt: we choose 2N2222\n  add AC source: left panel - analog primitives- waveform sources- sine source - general(type)\n  add audio signal: left panel - analog primitives- waveform sources- WAV file source\nopamp: use OPAMP from analog primitives - active devices - model LM741 and level = 3\n  BJT: LEFT PANEL - ANALOG LIBRARY - GENERAL - BC548(then change it to BC547)\n  digital primitives - standtard gates stimulus generators - inputs to the gates\nchoose fixed stimulus\ttime varying commands\n.define _100MHZclk\n+0ns 0\n+label = start\n+50ns 1\n+100ns 0\n  Models available in Labs(IITK-Labs) *OPAMP : Value LM741\n*Sinusoidal Source: Value General\nInfo (link) Dynamic DC Analysis Performs DC analysis on the system and changed the component dynamically as we change it in the simulation. We also get an option to add a slider for changing the value of a component\nTransient Analysis Useful for circuits that vary with time(generally due to capacitors). We can set maximum rum time, maximum step time and other limits and perform transient analysis.\nAC Analysis This plots the transfer function of the output with respect to the input(assuming the input to be 1, that is basically plots the ratio). We can set the frequency range, limits and perform the AC analysis.\nDC Analysis Allows us to see how one parameter changes with others, if we sweep something(generally on x-axis) at some range.\nUnderstanding Non-Idealities of Opamp (link) This is a Level-3 Opamp(which perfect reflects actual Opamps)\nInput offset Voltage: Ideally both the terminals of Opamp should be at same potential(virtually grounded), but there is a bias voltage present in between them.\nInput offset current: Difference in the bias current flowing in the non inverting terminal(ideally it should be 0)*\nFine tuning these biases can be done by adding some resistances or voltages over the inverting terminal\nOpamp Saturation: The maximum voltage that the OPAMP can achieve is equal to that of power supplies attached to it. There is also a limit over the maximum current that the OPAMP can supply as can be seen below. Frequency response of OPAMP: There is frequency response assosiated with OPAMP(behaves as low pass filter). This response does not allows perfect $180 deg$ phase shift and gain to be reflected to the ouput on connecting an sinusoidal input.\nThe maximum frequency that the OPAMP operates on can be found by connecting a gain of $1$ to the opamp and then finding out the $3dB$ drop point(Put $R_2 = 1$, and then find out the $3dB$ point). We can only amplify signals which are less than this unity gain frequency. But, if we go to higher gain the frequency starts detoriorating at earlier frequencies because of this gain bandwidth product. Slew Rate : On higher frequencies, OPAMP dont seem to follow the input perfectly. There is a rise and fall time assosiated with it as can be seen below. This also depends on the input of the voltage source. We can see this affect primarily over larger voltage and larger frequecny values.\n","wordCount":"538","inLanguage":"en","datePublished":"2019-01-17T05:25:52+05:30","dateModified":"2019-01-17T05:25:52+05:30","author":{"@type":"Person","name":"Sanchit Sinha"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sanchit-sinha.github.io/logBook/posts/courses-iitk/microcap_simulation/"},"publisher":{"@type":"Organization","name":"LogBook","logo":{"@type":"ImageObject","url":"https://sanchit-sinha.github.io/logBook/%3Clink%20/%20abs%20url%3E"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Microcap Simulation","name":"Microcap Simulation","description":"Info regarding Microcap and Microcap Simulation","keywords":["Microcap Simulation","6th-Sem@IITK"],"articleBody":"Microcap Simulation [ESC201P] Microcap elements   adding dependent sources : component - analog primitive - dependent sources\n  adding sliders: run dynamic DC analysis - dynamic dc tab - add slider\n  add diode: we choose diode In4001\n  add bjt: we choose 2N2222\n  add AC source: left panel - analog primitives- waveform sources- sine source - general(type)\n  add audio signal: left panel - analog primitives- waveform sources- WAV file source\nopamp: use OPAMP from analog primitives - active devices - model LM741 and level = 3\n  BJT: LEFT PANEL - ANALOG LIBRARY - GENERAL - BC548(then change it to BC547)\n  digital primitives - standtard gates stimulus generators - inputs to the gates\nchoose fixed stimulus\ttime varying commands\n.define _100MHZclk\n+0ns 0\n+label = start\n+50ns 1\n+100ns 0\n  Models available in Labs(IITK-Labs) *OPAMP : Value LM741\n*Sinusoidal Source: Value General\nInfo (link) Dynamic DC Analysis Performs DC analysis on the system and changed the component dynamically as we change it in the simulation. We also get an option to add a slider for changing the value of a component\nTransient Analysis Useful for circuits that vary with time(generally due to capacitors). We can set maximum rum time, maximum step time and other limits and perform transient analysis.\nAC Analysis This plots the transfer function of the output with respect to the input(assuming the input to be 1, that is basically plots the ratio). We can set the frequency range, limits and perform the AC analysis.\nDC Analysis Allows us to see how one parameter changes with others, if we sweep something(generally on x-axis) at some range.\nUnderstanding Non-Idealities of Opamp (link) This is a Level-3 Opamp(which perfectly reflects actual Opamps)\nInput offset Voltage: Ideally both the terminals of Opamp should be at same potential(virtually grounded), but there is a bias voltage present in between them.\nInput offset current: Difference in the bias current flowing in the non inverting terminal(ideally it should be 0)*\nFine tuning these biases can be done by adding some resistances or voltages over the inverting terminal\nOpamp Saturation: The maximum voltage that the OPAMP can achieve is equal to that of power supplies attached to it. There is also a limit over the maximum current that the OPAMP can supply as can be seen below. Frequency response of OPAMP: There is frequency response assosiated with OPAMP(behaves as low pass filter). This response does not allows perfect $180 deg$ phase shift and gain to be reflected to the ouput on connecting an sinusoidal input.\nThe maximum frequency that the OPAMP operates on can be found by connecting a gain of $1$ to the opamp and then finding out the $3dB$ drop point(Put $R_2 = 1$, and then find out the $3dB$ point). We can only amplify signals which are less than this unity gain frequency. But, if we go to higher gain the frequency starts detoriorating at earlier frequencies because of this gain bandwidth product. Slew Rate : On higher frequencies, OPAMP dont seem to follow the input perfectly. There is a rise and fall time assosiated with it as can be seen below. This also depends on the input of the voltage source. We can see this affect primarily over larger voltage and larger frequecny values.\nNoise in Circuits Increasing gain in the opamp circuit One way is to connect high resitances and thus increase the gain, but such high resistances are often not feasible, thus we try to increase the current in the branch. This is achieved by connecting smaller resistances which creates negative potential and allows more current to flow in.\nNoise Analysis (link) Most of the components in the circuit generates noise. Diodes, Mosfets, BJTs, resistors they all generate noise in the circuit.\nNoise Analysis using Microcap is done in AC mode.\nCircuit with resistor We can see that the output noise is a White noise. The noise is also tranferred back to the input and is called as input noise.\nCircuit with resistor in parallel with a capacitor On adding a capacitor in parallel to the resistor as shown below, we, get the following output noise\nTo get the total noise from the above graph, we need to integrate it over all the valuws. This can be achieved in microcap by plotting the following graph. This is achieved by using $sd$, which does the work of integration.\nThe steady state value is the total rms value of the noise generated.\nOpamp Circuit We are neglecting the noise present in LM741 opamp model\nWe can also find noise for the following circuit The noise referred at the input looks like the following\nThe noise at the output looks like the following\nThe total noise upon integration can be found in the same manner as in previous case.\nMathematical Analysis for Noise ","wordCount":"796","inLanguage":"en","datePublished":"2019-01-17T05:25:52+05:30","dateModified":"2019-01-17T05:25:52+05:30","author":{"@type":"Person","name":"Sanchit Sinha"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://sanchit-sinha.github.io/logBook/posts/courses-iitk/microcap_simulation/"},"publisher":{"@type":"Organization","name":"LogBook","logo":{"@type":"ImageObject","url":"https://sanchit-sinha.github.io/logBook/%3Clink%20/%20abs%20url%3E"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
@@ -89,7 +89,7 @@ LogBook</a>
 <h1 class=post-title>
 Microcap Simulation
 </h1>
-<div class=post-meta>January 17, 2019&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Sanchit Sinha
+<div class=post-meta>January 17, 2019&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Sanchit Sinha
 </div>
 </header> <div class=toc>
 <details>
@@ -116,7 +116,24 @@ Microcap Simulation
 <a href=#dc-analysis aria-label="DC Analysis">DC Analysis</a></li></ul>
 </li>
 <li>
-<a href=#understanding-non-idealities-of-opamp-linkhttpswwwyoutubecomwatchvbz809c6xhaefeatureemb_imp_woyt aria-label="Understanding Non-Idealities of Opamp (link)">Understanding Non-Idealities of Opamp (<a href="https://www.youtube.com/watch?v=bZ809c6XhAE&feature=emb_imp_woyt">link</a>)</a>
+<a href=#understanding-non-idealities-of-opamp-linkhttpswwwyoutubecomwatchvbz809c6xhaefeatureemb_imp_woyt aria-label="Understanding Non-Idealities of Opamp (link)">Understanding Non-Idealities of Opamp (<a href="https://www.youtube.com/watch?v=bZ809c6XhAE&feature=emb_imp_woyt">link</a>)</a></li>
+<li>
+<a href=#noise-in-circuits aria-label="Noise in Circuits">Noise in Circuits</a><ul>
+<li>
+<a href=#increasing-gain-in-the-opamp-circuit aria-label="Increasing gain in the opamp circuit">Increasing gain in the opamp circuit</a></li>
+<li>
+<a href=#noise-analysis-linkhttpswwwyoutubecomwatchvirkxtmkilju aria-label="Noise Analysis (link)">Noise Analysis (<a href="https://www.youtube.com/watch?v=IRkxTmkiLjU">link</a>)</a><ul>
+<li>
+<a href=#circuit-with-resistor aria-label="Circuit with resistor">Circuit with resistor</a></li>
+<li>
+<a href=#circuit-with-resistor-in-parallel-with-a-capacitor aria-label="Circuit with resistor in parallel with a capacitor">Circuit with resistor in parallel with a capacitor</a></li>
+<li>
+<a href=#opamp-circuit aria-label="Opamp Circuit">Opamp Circuit</a></li></ul>
+</li>
+<li>
+<a href=#mathematical-analysis-for-noise aria-label="Mathematical Analysis for Noise">Mathematical Analysis for Noise</a>
+</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -175,7 +192,7 @@ We also get an option to add a slider for changing the value of a component</p>
 <h3 id=dc-analysis>DC Analysis<a hidden class=anchor aria-hidden=true href=#dc-analysis>#</a></h3>
 <p>Allows us to see how one parameter changes with others, if we sweep something(generally on x-axis) at some range.</p>
 <h2 id=understanding-non-idealities-of-opamp-linkhttpswwwyoutubecomwatchvbz809c6xhaefeatureemb_imp_woyt>Understanding Non-Idealities of Opamp (<a href="https://www.youtube.com/watch?v=bZ809c6XhAE&feature=emb_imp_woyt">link</a>)<a hidden class=anchor aria-hidden=true href=#understanding-non-idealities-of-opamp-linkhttpswwwyoutubecomwatchvbz809c6xhaefeatureemb_imp_woyt>#</a></h2>
-<p>This is a Level-3 Opamp(which perfect reflects actual Opamps)<br>
+<p>This is a Level-3 Opamp(which perfectly reflects actual Opamps)<br>
 <img loading=lazy src=/logBook/img/EE380/opamp_non_ideal.png alt="Non Ideal OPAMP1">
 </p>
 <p><strong>Input offset Voltage:</strong> Ideally both the terminals of Opamp should be at same potential(virtually grounded), but there is a bias voltage present in between them.<br>
@@ -202,6 +219,59 @@ The maximum frequency that the OPAMP operates on can be found by connecting a ga
 <p><img loading=lazy src=/logBook/img/EE380/slew_rate1.png alt="Non Ideal OPAMP">
 </p>
 <p><img loading=lazy src=/logBook/img/EE380/slew_rate3.png alt="Non Ideal OPAMP">
+</p>
+<h2 id=noise-in-circuits>Noise in Circuits<a hidden class=anchor aria-hidden=true href=#noise-in-circuits>#</a></h2>
+<h3 id=increasing-gain-in-the-opamp-circuit>Increasing gain in the opamp circuit<a hidden class=anchor aria-hidden=true href=#increasing-gain-in-the-opamp-circuit>#</a></h3>
+<p>One way is to connect high resitances and thus increase the gain, but such high resistances are often not feasible, thus we try to increase the current in the branch. This is achieved by connecting smaller resistances which creates negative potential and allows more current to flow in.<br>
+<img loading=lazy src=/logBook/img/EE380/2_1.png alt="Noise in OPAMP">
+</p>
+<h3 id=noise-analysis-linkhttpswwwyoutubecomwatchvirkxtmkilju>Noise Analysis (<a href="https://www.youtube.com/watch?v=IRkxTmkiLjU">link</a>)<a hidden class=anchor aria-hidden=true href=#noise-analysis-linkhttpswwwyoutubecomwatchvirkxtmkilju>#</a></h3>
+<p>Most of the components in the circuit generates noise. Diodes, Mosfets, BJTs, resistors they all generate noise in the circuit.<br>
+<img loading=lazy src=/logBook/img/EE380/2_2.png alt="Noise in OPAMP">
+<br>
+Noise Analysis using Microcap is done in AC mode.</p>
+<h4 id=circuit-with-resistor>Circuit with resistor<a hidden class=anchor aria-hidden=true href=#circuit-with-resistor>#</a></h4>
+<p><img loading=lazy src=/logBook/img/EE380/2_3.png alt="Noise in OPAMP">
+<br>
+We can see that the output noise is a White noise. <br>
+<img loading=lazy src=/logBook/img/EE380/2_4.png alt="Noise in OPAMP">
+<br>
+The noise is also tranferred back to the input and is called as input noise.</p>
+<h4 id=circuit-with-resistor-in-parallel-with-a-capacitor>Circuit with resistor in parallel with a capacitor<a hidden class=anchor aria-hidden=true href=#circuit-with-resistor-in-parallel-with-a-capacitor>#</a></h4>
+<p>On adding a capacitor in parallel to the resistor as shown below,
+<img loading=lazy src=/logBook/img/EE380/2_5.png alt="Noise in OPAMP">
+<br>
+we, get the following output noise<br>
+<img loading=lazy src=/logBook/img/EE380/2_6.png alt="Noise in OPAMP">
+<br>
+To get the total noise from the above graph, we need to integrate it over all the valuws. This can be achieved in microcap by plotting the following graph. This is achieved by using $sd$, which does the work of integration.</p>
+<p><img loading=lazy src=/logBook/img/EE380/2_7.png alt="Noise in OPAMP">
+<br>
+The steady state value is the total rms value of the noise generated.<br>
+<img loading=lazy src=/logBook/img/EE380/2_8.png alt="Noise in OPAMP">
+</p>
+<h4 id=opamp-circuit>Opamp Circuit<a hidden class=anchor aria-hidden=true href=#opamp-circuit>#</a></h4>
+<p>We are neglecting the noise present in LM741 opamp model<br>
+We can also find noise for the following circuit <br>
+<img loading=lazy src=/logBook/img/EE380/2_9.png alt="Noise in OPAMP">
+<br>
+The noise referred at the input looks like the following</p>
+<p><img loading=lazy src=/logBook/img/EE380/2_10.png alt="Noise in OPAMP">
+<br>
+The noise at the output looks like the following</p>
+<p><img loading=lazy src=/logBook/img/EE380/2_12.png alt="Noise in OPAMP">
+<br>
+The total noise upon integration can be found in the same manner as in previous case.</p>
+<p><img loading=lazy src=/logBook/img/EE380/2_13.png alt="Noise in OPAMP">
+</p>
+<h3 id=mathematical-analysis-for-noise>Mathematical Analysis for Noise<a hidden class=anchor aria-hidden=true href=#mathematical-analysis-for-noise>#</a></h3>
+<p><img loading=lazy src=/logBook/img/EE380/2_14.png alt="Noise in OPAMP">
+<br>
+<img loading=lazy src=/logBook/img/EE380/2_15.png alt="Noise in OPAMP">
+<br>
+<img loading=lazy src=/logBook/img/EE380/2_16.png alt="Noise in OPAMP">
+<br>
+<img loading=lazy src=/logBook/img/EE380/2_17.png alt="Noise in OPAMP">
 </p>
 </div>
 <footer class=post-footer>
