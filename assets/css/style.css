@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 /* laptop */
 @media screen and (min-width: 769px) {
   #hero {
-    background: url("../img/bg7.jpg") no-repeat left fixed;
+    background: url("../img/bg7.jpg") no-repeat center fixed;
     background-size: cover;
   }
 }
