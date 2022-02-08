@@ -210,14 +210,14 @@ h1, h2, h3, h4, h5, h6 {
 /* mobile  */
 @media screen and (max-width: 800px) {
   #hero {
-    background: url("../img/bg6.jpg") no-repeat center fixed;
+    background: url("../img/bg6.jpg") center;
     background-size: cover;
   }
 }
 /* laptop */
 @media screen and (min-width: 800px) {
   #hero {
-    background: url("../img/bg7.jpg") no-repeat center fixed;
+    background: url("../img/bg7.jpg")  center ;
     background-size: cover;
   }
 }
