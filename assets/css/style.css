@@ -208,14 +208,14 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 /* mobile  */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   #hero {
-    background: url("../img/bg6.jpg") no-repeat bottom fixed;
+    background: url("../img/bg6.jpg") no-repeat center fixed;
     background-size: cover;
   }
 }
 /* laptop */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 800px) {
   #hero {
     background: url("../img/bg7.jpg") no-repeat center fixed;
     background-size: cover;
