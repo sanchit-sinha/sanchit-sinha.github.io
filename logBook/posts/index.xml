@@ -9,7 +9,412 @@
       <link>https://sanchit-sinha.github.io/logBook/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 25 Apr 2022 05:25:52 +0530</lastBuildDate><atom:link href="https://sanchit-sinha.github.io/logBook/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Mar 2024 02:28:32 +0000</lastBuildDate><atom:link href="https://sanchit-sinha.github.io/logBook/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[CSES] Apartments</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/apartments/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/apartments/</guid>
+      <description>Apartments</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Array Description</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/array_description/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/array_description/</guid>
+      <description>Array Description</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Book Shop</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/book_shop/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/book_shop/</guid>
+      <description>Book Shop</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Building Roads</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/building_roads/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/building_roads/</guid>
+      <description>Building Roads</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Building Teams</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/building_teams/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/building_teams/</guid>
+      <description>Building Teams</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Coin Combinations I</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/coin_combinations_i/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/coin_combinations_i/</guid>
+      <description>Coin Combinations I</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Coin Combinations II</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/coin_combinations_ii/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/coin_combinations_ii/</guid>
+      <description>Coin Combinations II</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Counting Numbers</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/counting_numbers/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/counting_numbers/</guid>
+      <description>Counting Numbers</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Counting Rooms</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/counting_rooms/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/counting_rooms/</guid>
+      <description>Counting Rooms</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Counting Towers</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/counting_towers/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/counting_towers/</guid>
+      <description>Counting Towers</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Course Schedule</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/course_schedule/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/course_schedule/</guid>
+      <description>Course Schedule</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Cycle Finding</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/cycle_finding/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/cycle_finding/</guid>
+      <description>Cycle Finding</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Dice Combinations</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/dice_combinations/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/dice_combinations/</guid>
+      <description>Dice Combinations</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Distinct Numbers</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/distinct_numbers/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/distinct_numbers/</guid>
+      <description>Distinct Numbers</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Edit Distance</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/edit_distance/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/edit_distance/</guid>
+      <description>Edit Distance</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Elevator Rides</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/elevator_rides/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/elevator_rides/</guid>
+      <description>Elevator Rides</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Ferris Wheel</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/ferris_wheel/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/ferris_wheel/</guid>
+      <description>Ferris Wheel</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Flight Discount</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/flight_discount/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/flight_discount/</guid>
+      <description>Flight Discount</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Flight Routes</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/flight_routes/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/flight_routes/</guid>
+      <description>Flight Routes</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Game Routes</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/game_routes/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/game_routes/</guid>
+      <description>Game Routes</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Grid Paths</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/grid_paths/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/grid_paths/</guid>
+      <description>Grid Paths</description>
+    </item>
+    
+    <item>
+      <title>[CSES] High Score</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/high_score/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/high_score/</guid>
+      <description>High Score</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Increasing Array</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/increasing_array/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/increasing_array/</guid>
+      <description>Increasing Array</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Increasing Subsequence</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/increasing_subsequence/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/increasing_subsequence/</guid>
+      <description>Increasing Subsequence</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Investigation</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/investigation/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/investigation/</guid>
+      <description>Investigation</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Labyrinth</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/labyrinth/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/labyrinth/</guid>
+      <description>Labyrinth</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Longest Flight Route</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/longest_flight_route/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/longest_flight_route/</guid>
+      <description>Longest Flight Route</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Message Route</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/message_route/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/message_route/</guid>
+      <description>Message Route</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Minimizing Coins</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/minimizing_coins/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/minimizing_coins/</guid>
+      <description>Minimizing Coins</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Missing Number</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/missing_number/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/missing_number/</guid>
+      <description>Missing Number</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Money Sums</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/money_sums/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/money_sums/</guid>
+      <description>Money Sums</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Monsters</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/monsters/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/monsters/</guid>
+      <description>Monsters</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Planets Queries I</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/planets_queries_i/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/planets_queries_i/</guid>
+      <description>Planets Queries I</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Planets Queries II</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/planets_queries_ii/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/planets_queries_ii/</guid>
+      <description>Planets Queries II</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Projects</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/projects/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/projects/</guid>
+      <description>Projects</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Rectangle Cutting</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/rectangle_cutting/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/rectangle_cutting/</guid>
+      <description>Rectangle Cutting</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Removal Game</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/removal_game/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/removal_game/</guid>
+      <description>Removal Game</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Removing Digits</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/removing_digits/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/removing_digits/</guid>
+      <description>Removing Digits</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Repetitions</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/repetitions/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/repetitions/</guid>
+      <description>Repetitions</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Round Trip</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/round_trip/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/round_trip/</guid>
+      <description>Round Trip</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Round Trip II</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/round_trip_ii/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/round_trip_ii/</guid>
+      <description>Round Trip II</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Shortest Routes I</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/shortest_routes_i/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/shortest_routes_i/</guid>
+      <description>Shortest Routes I</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Shortest Routes II</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/shortest_routes_ii/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/shortest_routes_ii/</guid>
+      <description>Shortest Routes II</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Two Sets II</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/two_sets_ii/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/two_sets_ii/</guid>
+      <description>Two Sets II</description>
+    </item>
+    
+    <item>
+      <title>[CSES] Weird Algorithm</title>
+      <link>https://sanchit-sinha.github.io/logBook/posts/cp/weird_algorithm/</link>
+      <pubDate>Fri, 29 Mar 2024 02:28:32 +0000</pubDate>
+      
+      <guid>https://sanchit-sinha.github.io/logBook/posts/cp/weird_algorithm/</guid>
+      <description>Weird Algorithm</description>
+    </item>
+    
     <item>
       <title>[EE340A] Electromagnetic Theory</title>
       <link>https://sanchit-sinha.github.io/logBook/posts/courses-iitk/ee340_electromagnetic_theory/</link>
